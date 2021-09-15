@@ -1,4 +1,4 @@
-package org.poke.man.domain;
+package org.poke.mon.domain;
 
 import org.eclipse.microprofile.rest.client.inject.RegisterRestClient;
 import org.jboss.resteasy.annotations.jaxrs.PathParam;
@@ -9,9 +9,12 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
-
-@RegisterRestClient(baseUri = "https://pokeapi.co/api/v2/pokemon")
-public interface PokemanService {
+/**
+ * This interface is used as rest client
+ * @author bruce
+ */
+@RegisterRestClient(configKey = "pokemon-api")
+public interface PokemonService {
   
     @GET
     @Produces(MediaType.APPLICATION_JSON)

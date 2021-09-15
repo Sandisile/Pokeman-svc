@@ -1,4 +1,4 @@
-package org.poke.man.domain;
+package org.poke.mon.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AllArgsConstructor;
